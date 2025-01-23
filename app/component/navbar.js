@@ -25,7 +25,7 @@ const Navbar = async () => {
               {user?.email ? (
                 <Link href="/Profile">Profile</Link>
               ) : (
-                <Link href="/Profile">Profile</Link>
+                <Link href="/Profile">My Profile </Link>
               )}
             </li>
 
