@@ -1,6 +1,6 @@
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 
-import React from "react";
+import React, { use } from "react";
 import { LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
 
 export const metadata = {
@@ -20,7 +20,14 @@ const page = async () => {
   return (
     <div>
       {user?.email ? (
-        <p className="text-white bg-red-500"> Hi = {user?.given_name}</p>
+      <>
+        <p className="text-white"> Hi = 👋 {user?.given_name}</p>
+        <p className="text-white">
+          {
+            user?.email
+          }
+        </p>
+            </>
       ) : (
         <div className="flex w-56 text-xl pt-5">
           <p className="mr-2 ">Please</p>
