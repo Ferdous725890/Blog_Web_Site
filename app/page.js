@@ -3,6 +3,7 @@ import getAlldat from "../lib/getAlldata";
 export default async function Home() {
   const allposts = await getAlldat();
 
+
   return (
     <div>
       <main className="mt-5">
